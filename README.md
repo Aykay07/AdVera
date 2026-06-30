@@ -348,6 +348,11 @@ Penalty values are capped at **5000 basis points (50%)**, regardless of how larg
 
 # 10. Workflow Diagram
 
+![Dashboard Overview](./assets/workflow.png)
+> **The workflow above illustrates how an advertisement impression flows through AdVera, from its initial capture to its final settlement on the blockchain.
+> When an advertiser or publisher generates an impression, the frontend sends the data to the Express backend through REST APIs. The backend validates the request, stores the event in MySQL, and periodically groups pending impressions into batches. For each batch, Keccak-256 hashes are generated and combined into Merkle Trees, producing compact cryptographic proofs. These proofs are then submitted to the `AdDispute` smart contract on the Hardhat blockchain using `ethers.js`.
+> The smart contract compares the advertiser and publisher impression counts, calculates the variance, determines whether the batch is **Verified** or **Disputed**, computes any applicable clawback penalty, and permanently records the settlement on the blockchain. Finally, the frontend retrieves the updated settlement information through the REST API and displays it on the dashboard, providing users with a transparent and tamper-resistant view of campaign results.**
+
 ---
 
 # 11. Tech Stack
