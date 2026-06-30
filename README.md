@@ -27,7 +27,7 @@
 6. [How AdVera Works](#6-how-advera-works)
 7. [System Architecture](#7-system-architecture)
 8. [Blockchain Integration](#8-blockchain-integration)
-9. [Data Flow Diagram](#9-data-flow-diagram)
+9. [Component Boundaries Diagram](#9-component-boundaries-diagram)
 10. [Workflow Diagram](#10-workflow-diagram)
 11. [Tech Stack](#11-tech-stack)
 12. [Project Structure](#12-project-structure)
@@ -342,10 +342,12 @@ Penalty values are capped at **5000 basis points (50%)**, regardless of how larg
 
 ---
 
-# 9. Component Boundaries
+# 9. Component Boundaries Diagram
 
 ![Dashboard Overview](./assets/component_boundaries.png)
 > **The component boundaries diagram illustrates how AdVera is divided into independent modules, each with a well-defined responsibility.**
+
+---
 
 # 10. Workflow Diagram
 
