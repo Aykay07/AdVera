@@ -342,9 +342,10 @@ Penalty values are capped at **5000 basis points (50%)**, regardless of how larg
 
 ---
 
-# 9. Data Flow Diagram
+# 9. Component Boundaries
 
----
+![Dashboard Overview](./assets/component_boundaries.png)
+> **The component boundaries diagram illustrates how AdVera is divided into independent modules, each with a well-defined responsibility.**
 
 # 10. Workflow Diagram
 
@@ -902,9 +903,8 @@ Because only the hash is stored:
 - The backend can later combine thousands of hashes into a single Merkle root for blockchain settlement.
 
 ### Event Lifecycle
-The `events` table behaves like a queue.<br>
 ![Event Lifecycle](./assets/event_flow.png)
-> **Rows remain in the table only until they have been included in a blockchain batch.**
+> **The `events` table behaves like a queue. Rows remain in the table only until they have been included in a blockchain batch.**
 
 ### Database Optimization
 A composite index is created on:
