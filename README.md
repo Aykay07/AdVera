@@ -320,7 +320,7 @@ The backend connects to the blockchain using **ethers.js** and a wallet created 
 The contract exposes three primary functions used by the backend:
 
 | Function              | Purpose                                             |
-| --------------------- | --------------------------------------------------- |
+| --------------------- | ---dit this part now------------------------------------------------ |
 | `submitBatchProofs()` | Stores a completed batch on-chain after every sweep |
 | `getBatch(batchId)`   | Returns metadata for a specific batch               |
 | `getBatchCount()`     | Returns the total number of settled batches         |
@@ -331,7 +331,7 @@ The contract owner can authorize or revoke gateway wallets using:
 ```solidity
 setGateway()
 ```
-
+dit this part now
 The dispute threshold is configurable through:
 ```solidity
 setDisputeThreshold()
@@ -775,24 +775,25 @@ If the frontend dashboard is open, these updates will appear automatically(live)
 
 # 17. Screenshots
 
-> **Screenshots will be added here.**
->
-> The dashboard displays four KPI cards (**Total Ad Spend, Verified Impressions, Clawback Due, and Active Disputes**), a live settlement ledger showing every processed batch, and a variance chart with a red **5% dispute threshold** line.
-
 ### Dashboard Overview
-```markdown
 ![Dashboard Overview](./assets/screenshots/dashboard.png)
-```
+> **The main dashboard provides a real-time overview of advertising campaign settlements. It displays key performance indicators such as **Total Ad Spend**, **Verified Impressions**, **Clawback Due**, and **Active Disputes**, along with a settlement ledger and variance analysis chart.**
 
 ### Disputed Batch Example
-```markdown
 ![Disputed Batch](./assets/screenshots/disputed_batch.png)
-```
+> **This screenshot shows a campaign whose impression variance exceeded the configured **5% dispute threshold**. The batch is automatically marked as **Disputed**, and the calculated clawback penalty is displayed in the settlement ledger.**
 
 ### Audit Report
-```markdown
 ![Audit Report](./assets/screenshots/audit_report.png)
-```
+> **The Python-based audit tool generates a report summarizing all settled batches. The report includes campaign IDs, advertiser and publisher impression counts, calculated variance, settlement status, penalties, and timestamps for independent verification.**
+
+### Smart Contract Deployment
+![Contract Deployment](./assets/screenshots/deploy.png)
+> **Shows the successful deployment of the `AdDispute` smart contract to the local Hardhat blockchain.**
+
+### Traffic Simulation
+![Traffic Simulator](./assets/screenshots/traffic_simulator.png)
+> **Illustrates the execution of the Python traffic simulator used to generate both legitimate and fraudulent advertisement impressions.**
 
 ---
 
