@@ -43,7 +43,7 @@
 22. [Performance](#22-performance)
 23. [Challenges Faced](#23-challenges-faced)
 24. [Future Scope](#24-future-scope)
-25. [Contributors](#25-contributors)
+25. [Contributions](#25-contributions)
 26. [Acknowledgements](#26-aknowledgements)
 27. [Contact](#27-contact)
 
@@ -1283,6 +1283,8 @@ Instead of periodic batch sweeps, future versions could process streaming events
 Combined with scalable message queues and blockchain rollups, this would enable near real-time settlement for high-volume advertising platforms.
 
 ---
+
+
 
 
 
