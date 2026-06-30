@@ -114,7 +114,7 @@ AdVera was built with a few clear goals in mind.
 
 ---
 
-# 5. Key/Significant Features
+# 5. Key Features
 
 ### 1) Dual-Sided Merkle Proofs
 Both advertisers and publishers independently submit hashed impression events. Neither party can modify or overwrite the other's data.
@@ -1282,5 +1282,6 @@ Instead of periodic batch sweeps, future versions could process streaming events
 Combined with scalable message queues and blockchain rollups, this would enable near real-time settlement for high-volume advertising platforms.
 
 ---
+
 
 
