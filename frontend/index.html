@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel ="stylesheet" href="cardflip.css">
+
+</head>
+<body>
+   <div class="logo-container">
+
+    <button id="generateBatch">
+        Generate Batch
+    </button>
+
+    <img src="image.png" alt="Advera Logo" class="logo">
+
+</div>
+    <!--div of scrollbars-->
+      <div id="hi" class="nav-card">
+      <a href="#kpi"> 📋KPI-DETAILS</a>
+      <a href="#ledgerContainer"> 📟LEDGER</a>
+       <a href="#varianceChart"> 📈VARIENCE-CHART</a>
+         <a href="#about">👩🏻‍💻ABOUT</a>
+     </div> 
+    <!--1st card with 4 metrics-->
+    <section class="kpi-container">
+  
+   
+
+  <div id="kpi" class="kpi-container">
+    <!--1st card -->
+    <div class="kpi-card">    
+         <p class="kpi-label">TOTAL AD SPEND</p>
+    <h2 class="kpi-sub" id="adSpent"> $0 </h2>
+     </div>
+     <!--2nd card-->
+     <div class="kpi-card">
+         <p class="kpi-label"> CLEAN IMPRESSIONS </p>
+    <h2 class="kpi-sub" id="verified">0</h2>
+  </div>
+  <!-- 3RD CARD-->
+<div class="kpi-card"> 
+    <p class="kpi-label"> CLAWBACK DUE </p>
+      <h2 class="kpi-sub" id="clawback">$0</h2>
+</div>
+<!-- 4th card-->
+ <div class="kpi-card"> 
+    <p class="kpi-label"> ACTIVE DISPUTES </p>
+      <h2 class="kpi-sub" id="disputes">0</h2>
+</div>
+ </section>
+<!-- LIVE SETTLEMENT LEDGER-->
+ <div class="ledger-card" id="ledgerContainer">
+  <div class="ledger-header"> 
+  <h2>LIVE SETTLEMENT LEDGER  </h2>  
+  </div>
+  <!-- rows-->
+  <table class="ledger-table">
+
+<thead>
+<tr>
+    <th>BATCH</th>
+    <th>CAMPAIGN</th>
+    <th>VARIANCE</th>
+    <th>STATUS</th>
+</tr>
+</thead>
+
+<tbody id="ledger-body">
+
+</tbody>
+
+</table>
+ </div>
+ <!-- graph-->
+<div class="graph-card" id="graph-card">
+
+    <h3 id="headv">DISCREPANCY VARIANCE BY BATCH</h3>
+    <canvas id="varianceChart"></canvas>
+</div>
+     
+  
+  
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+<div id="about" class="about">
+  <h1 class="about-header"> ABOUT </h1>
+  <p id="we">Built with creativity, caffeine, and late-night debugging sessions, AdVera transforms campaign insights into a clean and interactive dashboard experience. Designed to simplify ad verification and settlement tracking, the project blends functionality with a modern user interface.
+Developed by the cool duo Urvashi & Anika</p>
+</p>
+</div>
+</body> 
+</html>

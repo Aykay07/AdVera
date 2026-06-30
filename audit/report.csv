@@ -1,0 +1,4 @@
+batchId,campaignId,advertiserMerkleRoot,publisherMerkleRoot,advertiserCount,publisherCount,variancePct,status,timestamp,penaltyBasisPoints,discrepancy,clawback_pct,likely_fraud
+2,2002,0xb91398378c03077dd048e4a8032b03f2adc6dfc110f93c8adfb2ccc274d63d2a,0xc9aa75c3582f76feb94bb00071d7ff50645b63917f5b10241da98be518194e96,200,621,210.5,Disputed,2026-06-22 10:57:28,5000,421,50.0,True
+1,2001,0xca7a25efb75bd82b5eafdc7545d5fd6623fba8833010acb16b5aacab364e36a9,0x10a4ac46b4fd1a4c2b1af7c1128108e06b04e4b074275089310133771385e2d8,200,198,1.0,Verified,2026-06-22 10:57:13,0,2,0.0,False
+0,1001,0xa681d6dea32af4c3580efa454060b23c3b8bfc8556a8ca0e1c47717017e8d124,0xfb8168a7f5b9d90178d00c1a5575b548143559eb4bcc9c73113853ee4dc2c0a0,1,1,0.0,Verified,2026-06-22 10:12:42,0,0,0.0,False
