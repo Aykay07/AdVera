@@ -1,72 +1,32 @@
-# ==========================
-# Node.js
-# ==========================
-
+# Node
 node_modules/
-npm-debug.log*
-package-lock.json
 
-# ==========================
 # Python
-# ==========================
-
 venv/
 __pycache__/
 *.pyc
 
-# ==========================
-# Environment Variables
-# ==========================
-
-.env
-.env.*
-
-# ==========================
 # Hardhat
-# ==========================
-
 artifacts/
 cache/
 
-# ==========================
-# Reports
-# ==========================
+# Environment
+.env
+.env.*
 
-*.csv
-
-# Uncomment if you don't want sample reports
-# audit/report.csv
-
-# ==========================
-# Operating System
-# ==========================
-
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# ==========================
-# VS Code
-# ==========================
-
-.vscode/
-
-# ==========================
 # Logs
-# ==========================
-
-logs/
 *.log
 
-# ==========================
-# Temporary Files
-# ==========================
+# Reports
+*.csv
 
-*.tmp
-*.temp
-
-# ==========================
 # TypeScript
-# ==========================
-
 *.tsbuildinfo
+
+# OS
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# VS Code
+.vscode/
