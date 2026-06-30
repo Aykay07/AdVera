@@ -1,1 +1,9 @@
+* text=auto
 
+*.js text
+*.ts text
+*.html text
+*.css text
+*.sol text
+*.py text
+*.md text
