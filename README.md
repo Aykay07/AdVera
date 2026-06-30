@@ -903,8 +903,8 @@ Because only the hash is stored:
 
 ### Event Lifecycle
 The `events` table behaves like a queue.<br>
-(insert image)
-Rows remain in the table only until they have been included in a blockchain batch.
+![Event Lifecycle](./assets/event_flow.png)
+> **Rows remain in the table only until they have been included in a blockchain batch.**
 
 ### Database Optimization
 A composite index is created on:
@@ -967,17 +967,9 @@ struct BatchMetadata {
 This single structure contains everything required to audit a completed settlement.
 
 ### Batch Lifecycle
-Each batch moves through a small number of states-
-```text
-Pending
-   │
-   ├──────────────► Verified
-   │
-   └──────────────► Disputed
-                         │
-                         ▼
-                     Settled
-```
+
+![Event Lifecycle](./assets/batch_states.png)
+> **Each batch can move through the above mentioned (possible) states-**
 
 **1) Pending**<br>
 A batch has been submitted but has not yet been evaluated.
@@ -1083,6 +1075,7 @@ Whenever important actions occur, the contract emits blockchain events.
 | `BatchSubmitted` | A new batch has been recorded |
 | `BatchSettled` | A disputed batch has been settled |
 | `GatewayAuthorized` | A gateway wallet has been added or removed |
+
 These events make it possible to build dashboards, monitoring tools, or external analytics without modifying the contract itself.
 
 ---
