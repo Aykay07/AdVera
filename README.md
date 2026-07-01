@@ -905,8 +905,8 @@ Because only the hash is stored:
 - The backend can later combine thousands of hashes into a single Merkle root for blockchain settlement.
 
 ### Event Lifecycle
-![Event Lifecycle](./assets/event_flow.png)
-> **The `events` table behaves like a queue. Rows remain in the table only until they have been included in a blockchain batch.**
+<img src="assets/event_flow.png" width="500">
+ **The `events` table behaves like a queue. Rows remain in the table only until they have been included in a blockchain batch.**
 
 ### Database Optimization
 A composite index is created on:
