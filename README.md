@@ -364,9 +364,9 @@ AdVera combines modern web technologies with blockchain to create a transparent 
 
 | Category | Technology |
 |-----------|------------|
-| **Frontend** | HTML5, CSS3, Vanilla JavaScript |
-| **Backend** | Node.js, Express.js, TypeScript |
-| **Database** | MySQL |
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Backend** | Node.js, Express.js |
+| **Database** | MySQL8|
 | **Blockchain** | Solidity, Hardhat, ethers.js |
 | **Cryptography** | MerkleTreeJS, Keccak-256 |
 | **API** | REST API |
