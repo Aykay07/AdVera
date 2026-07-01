@@ -43,9 +43,6 @@
 22. [Performance](#22-performance)
 23. [Challenges Faced](#23-challenges-faced)
 24. [Future Scope](#24-future-scope)
-25. [Contributions](#25-contributions)
-26. [Acknowledgements](#26-aknowledgements)
-27. [Contact](#27-contact)
 
 ---
 
